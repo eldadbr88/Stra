@@ -1,4 +1,4 @@
-F<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -365,7 +365,7 @@ F<!DOCTYPE html>
                 <span class="action-label">Call</span>
             </a>
 
-            <a class="action-btn" href="mailto:info@navaclinic.it">
+            <a class="action-btn" href="mailto:thomas@navagroupeu.com">
                 <div class="action-icon email">
                     <svg style="color:#2a2420" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="2" y="4" width="20" height="16" rx="2"/>
@@ -435,9 +435,9 @@ F<!DOCTYPE html>
 
     <script>
         function saveContact() {
-            const vcard = `BEGIN:Marco;;;
-VERSION:Marco;;;
-FN:Marco;;;
+            const vcard = `BEGIN:VCARD
+VERSION:3.0
+FN:Marco
 N:Marco;;;
 ORG:NAVA GROUP EU
 TITLE:Store Manager Florence
@@ -449,7 +449,7 @@ END:VCARD`;
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'Thomas_Sarina.vcf';
+            a.download = 'Marco.vcf';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
